@@ -1,0 +1,84 @@
+﻿html, body {
+    background-image: url("images/homePagePic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin:0;
+}
+
+.headerBackground {
+    padding: 185px;
+}
+
+
+.headerPlace {
+    background-color: rgba(250, 235, 215, 0.5);
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    padding: 100px;
+}
+
+.divBodyHome {
+    background-color: white;
+    width: 100%;
+    padding: 40px 0px 40px 0px;
+}
+
+.headerTitle {
+    font-size: 40px;
+}
+
+.divSpacing {
+    padding: 60px;
+}
+
+.marginLeftClass {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.headerHome{
+    font-size: 60px;
+}
+
+.paraVision {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.paraDesc {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.imgCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.cell {
+    height: auto;
+    overflow: hidden;
+}
+
+.divGridImg {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 10px;
+}
+
+.imgGrid{
+    width: 90%;
+    height: auto;
+    border: solid 1px;
+    border-radius: 10px;
+}
+
+.linkStyle {
+    color: grey;
+}

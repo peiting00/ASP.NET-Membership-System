@@ -1,0 +1,97 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&family=Fredoka+One&display=swap');
+
+* {
+    font-family: 'Baloo Da 2', cursive;
+}
+body {
+    background: #EFF0F5;
+}
+
+#hlBack {
+    margin-left: 140px;
+    text-decoration: none;
+}
+
+.main_wrapper {
+    width: 1200px;
+
+}
+
+#form1 {
+    margin-top: 20px;
+    display: flex;
+    justify-content:center;
+}
+
+.td_input {
+    width: 400px;
+}
+
+.td_input > input {
+    width: 95%;
+    position: relative;
+    transition: 0.15s;
+    cursor: pointer;
+    background: white;
+}
+.td_input > input:hover,
+.td_input > select:hover,
+.td_input > select:active {
+    background: #CECECE;
+}
+
+
+.td_input > .imgUpload,
+.td_input > .imgUpload:hover,
+.td_input > .imgUpload:active,
+.td_input > .imgUpload:focus {
+    all: initial;
+    margin-top: 5px;
+}
+
+.td_input > #btnUpload {
+    width: 70px;
+    height: 25px;
+    background: #1DB7FA;
+    border-radius: 2px;
+    text-align: center;
+}
+
+#lblImageUploaded {
+    background: #FFFFFF;
+    padding: 3px 6px;
+    border-radius: 2px;
+}
+
+.buttons input,
+.td_button input {
+    border: none;
+    outline: none;
+    background: #B9A5E0;
+    width: 100px;
+    padding: 5px;
+    margin: 0 2%;
+    border-radius: 25px;
+}
+
+/*merchandize.aspx*/
+.merchandize_wrapper {
+    width: 100%;
+    height: auto;
+/*    background: red;*/
+    display: flex;
+    justify-content:center;
+}
+
+.merchandize_container {
+    width: 90%;
+}
+
+#gridViewProduct {
+    margin-top: 20px;
+}
+
+td {
+    padding: 0 20px;
+}
+

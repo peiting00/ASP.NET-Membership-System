@@ -1,0 +1,411 @@
+﻿html, body {
+    background-image: url("images/homePagePic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.divBody{
+    margin:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+.divSpacing {
+    padding: 40px;
+}
+
+.divServiceContentContain {
+    width: 70%;
+    margin: auto;
+    //border:solid;
+    background-color: white;
+    border-radius: 10px;
+   
+}
+
+.divHeader {
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    background-color: rgba(135, 206, 250, 1.0);
+    border-radius: 10px 10px 0 0;
+    color: white;
+}
+
+.header {
+    font-size: 40px;
+    font-family: "Poppins";
+    font-weight: 900;
+}
+
+.divBtn {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btnSerSup {
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 25px;
+    font-family: "Poppins";
+}
+
+.dropShadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.btnSerSup:hover{
+    background-color: rgba(173, 222, 252, 1.0);
+    color: white;
+    transition-duration: 0.3s;
+}
+
+.marginClass {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.btnRight{
+    text-align: right;
+}
+
+.btnInsertFAQ {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(135, 206, 250, 1.0);
+    color: white;
+    font-size: 18px;
+    font-family: "Poppins";
+    font-weight: 600;
+    cursor:pointer;
+}
+
+.GridViewFAQ {
+    width: 98%;
+    margin: auto;
+    border-radius: 10px;
+    //border:solid;
+}
+
+.tableInsert{
+    width: 100%;
+    //border: solid;
+    
+}
+
+.tableStyle{
+    width: 100%;
+}
+
+.tableColTitle{
+    width: 25%;
+}
+
+.tableColBox{
+    width: 75%;
+}
+
+.lblStyle {
+    font-size: 20px;
+}
+
+.txtStyle {
+    padding: 10px;
+    padding-left: 5px;
+    height: 30px;
+    width: 80%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid 1px;
+    outline: none;
+}
+
+.rowGrid{
+    padding:100px;
+}
+
+.lblStep{
+    font-family: "Poppins";
+    font-size: 20px;
+}
+
+.lblStepColor {
+    color: rgba(135, 206, 250, 1.0);
+}
+
+.txtStyle2 {
+    width: 95%;
+    padding: 20px;
+    border-radius: 10px;
+    outline: none;
+    font-family: "Poppins";
+    font-size: 18px;
+}
+
+.lblErrorMsg {
+    color: crimson;
+    font-family: "Poppins";
+}
+
+.lblRecoverStatusMsg {
+    font-size: 19px;
+    font-family: "Poppins";
+}
+
+.tableEventss {
+    width: 100%;
+    font-family: "Poppins";
+    //border: solid;
+}
+
+.divTableEvent{
+    border-radius: 10px;
+    border: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+.tdHeaderEvent {
+    width: 20%;
+    padding-right: 10px;
+}
+
+.tdContentEventt {
+    height: 50px;
+}
+
+.tdContentEvent{
+    width: 46%;
+}
+
+.tdImages{
+    width: 40%;
+    height: 500px;
+    text-align: center;
+}
+
+.tdBtnRegister{
+    text-align: center;
+}
+
+.lblHeaderEvent {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.lblContentEvent {
+    font-size: 15px;
+}
+
+.btnRegisterEvent{
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    background-color: cadetblue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-family: "Poppins";
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.imgEvent {
+    border-radius: 10px;
+    text-align: center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.lblEventName{
+    font-size: 20px;
+    font-style:italic;
+}
+
+.divTableEventRegis{
+   // border:solid;
+   
+}
+
+.tableRegis{
+    margin:auto;
+}
+
+.txtRegisEvent{
+    width: 100%;
+    padding: 15px;
+}
+
+.lblSuccess {
+    font-family: "Poppins";
+    font-size: 18px;
+    color: limegreen;
+}
+
+.divPaymentEvent {
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    //border: solid;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: "Poppins";
+
+}
+
+.btnPayment {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    font-family: "Poppins";
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.divEventContainer {
+    width: 75%;
+    margin-right: 5%;
+    margin-left: 20%;
+    //border:solid;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.divfloatingIdea {
+    line-height: 1.5;
+    width: 230px;
+    padding: 20px;
+    margin-left: 20px;
+    position: fixed;
+    background-color: white;
+    border-radius: 10px;
+    font-family: "DM Sans";
+}
+
+.btnEventMenu {
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+    font-family: "Poppins";
+}
+
+    .btnEventMenu:hover {
+        background-color: rgba(214, 239, 255, 1.0);
+        transition: 0.3s;
+    }
+
+.tableEvent{
+    
+}
+
+.txtEvents {
+    width: 70%;
+    height: 40px;
+    padding: 10px;
+    font-family: "Poppins";
+    font-size: 15px;
+}
+
+.ddlEventStyle{
+    width: 50%;
+    padding: 15px;
+    font-family: "Poppins";
+    font-size: 15px;
+}
+
+.btnEventItem{
+    padding: 20px;
+    font-family: "Poppins";
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    border: none;
+    width: 100%;
+    text-align:left;
+    cursor: pointer;
+}
+
+.tablePar{
+    font-family: "Poppins";
+    font-size: 18px;
+    width: 100%;
+}
+
+.tdHeaderPar{
+    //font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    background-color: lightgray;
+}
+
+.tdParWidth {
+    padding: 12px;
+    width: 25%;
+}
+
+.tdBtnPar{
+    padding: 5px;
+    text-align: center;
+}
+
+.btnApprovePar {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    font-family: "Poppins";
+    font-weight: 600;
+    cursor: pointer;
+    background-color: limegreen;
+}
+
+.lblApproved {
+    width: 95%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    font-family: "Poppins";
+    font-weight: 600;
+    background-color: lightgrey;
+}
+
+.btnSrch {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: firebrick;
+    font-size: 18px;
+    font-family: "Poppins";
+    
+    cursor: pointer;
+    background-color: white;
+}
+
+
+

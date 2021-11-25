@@ -1,0 +1,423 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{00A0D504-DCA5-4316-9F7B-E70C7BFDB403}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PRG3204_Group06_Assignment_Chinese_Cultural_Society</RootNamespace>
+    <AssemblyName>PRG3204 Group06 Assignment Chinese Cultural Society</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44372</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="addEvent.aspx" />
+    <Content Include="addFAQ.aspx" />
+    <Content Include="addFeedbackQuestion.aspx" />
+    <Content Include="App_Data\ccs.mdf" />
+    <Content Include="App_Data\ccs_log.ldf">
+      <DependentUpon>ccs.mdf</DependentUpon>
+    </Content>
+    <Content Include="carts.aspx" />
+    <Content Include="catalogue.aspx" />
+    <Content Include="CSS.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\order.css" />
+    <Content Include="css\orderDetail.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\updateMerchandize.css" />
+    <Content Include="editProfile.aspx" />
+    <Content Include="eventActivities.aspx" />
+    <Content Include="eventRegistration.aspx" />
+    <Content Include="homePageCSS.css" />
+    <Content Include="homeWithNav.aspx" />
+    <Content Include="IdeaGathering.aspx" />
+    <Content Include="images\brush01.jpg" />
+    <Content Include="images\brush02.jpg" />
+    <Content Include="images\brush03.jfif" />
+    <Content Include="images\calligraphy.jpg" />
+    <Content Include="images\chess01.jfif" />
+    <Content Include="images\chess02.jpg" />
+    <Content Include="images\chess03.jfif" />
+    <Content Include="images\chess04.jfif" />
+    <Content Include="images\chineseInstrument.jpg" />
+    <Content Include="images\debate.png" />
+    <Content Include="images\diabolo.jpg" />
+    <Content Include="images\fan01.jfif" />
+    <Content Include="images\fan02.jfif" />
+    <Content Include="images\fan03.jfif" />
+    <Content Include="images\fan04.jfif" />
+    <Content Include="images\fan05.jfif" />
+    <Content Include="images\fan06.jfif" />
+    <Content Include="images\handkerchief01.jfif" />
+    <Content Include="images\handkerchief02.jfif" />
+    <Content Include="images\handkerchief03.jfif" />
+    <Content Include="images\handkerchief04.jfif" />
+    <Content Include="images\homePagePic.jpg" />
+    <Content Include="images\icons\minus.jpg" />
+    <Content Include="images\icons\plus.jpg" />
+    <Content Include="images\inkstone01.jfif" />
+    <Content Include="images\inkstone02.jfif" />
+    <Content Include="images\inkstone03.jfif" />
+    <Content Include="images\inkstone04.jfif" />
+    <Content Include="images\login\bowei.jpg" />
+    <Content Include="images\login\hippie1.jpg" />
+    <Content Include="images\login\Loginbackground.jpg" />
+    <Content Include="images\login\profile1.jpg" />
+    <Content Include="images\login\profile2.jpg" />
+    <Content Include="images\login\profile3.jpg" />
+    <Content Include="images\login\profile4.jpg" />
+    <Content Include="images\login\profile5.jpg" />
+    <Content Include="images\login\profile6.jpg" />
+    <Content Include="images\login\profile7.jpg" />
+    <Content Include="images\login\user.jpg" />
+    <Content Include="images\login\zhixuan.jpg" />
+    <Content Include="images\midAutumnFestival.jpg" />
+    <Content Include="images\pendant01.jfif" />
+    <Content Include="images\pendant02.jfif" />
+    <Content Include="images\pendant03.jfif" />
+    <Content Include="images\pendant04.jfif" />
+    <Content Include="images\pendant05.jfif" />
+    <Content Include="images\pendant06.jfif" />
+    <Content Include="images\pendant07.jfif" />
+    <Content Include="images\pendant08.jfif" />
+    <Content Include="images\pendant09.jfif" />
+    <Content Include="images\pendant10.jfif" />
+    <Content Include="images\pendant11.jfif" />
+    <Content Include="images\pendant12.jfif" />
+    <Content Include="images\teacup01.jfif" />
+    <Content Include="images\teacup02.jfif" />
+    <Content Include="images\teacup03.jfif" />
+    <Content Include="images\teapot01.jfif" />
+    <Content Include="images\teapot02.jfif" />
+    <Content Include="images\teaset01.jfif" />
+    <Content Include="images\teaset02.jfif" />
+    <Content Include="images\teaset03.jfif" />
+    <Content Include="images\testingpurpose.jfif" />
+    <Content Include="images\testUpload01.png" />
+    <Content Include="login.aspx" />
+    <Content Include="logout.aspx" />
+    <Content Include="manageParticipants.aspx" />
+    <Content Include="merchandize.aspx" />
+    <Content Include="myOrder.aspx" />
+    <Content Include="orderDetails.aspx" />
+    <Content Include="participantsInfo.aspx" />
+    <Content Include="passwordRecovery.aspx" />
+    <None Include="Scripts\jquery-1.8.0.intellisense.js" />
+    <Content Include="product.aspx" />
+    <Content Include="Scripts\jquery-1.8.0.js" />
+    <Content Include="Scripts\jquery-1.8.0.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="serviceSupport.aspx" />
+    <Content Include="serSupCSS.css" />
+    <Content Include="signup.aspx" />
+    <Content Include="summary.aspx" />
+    <Content Include="updateEvent.aspx" />
+    <Content Include="updateMerchandize.aspx" />
+    <Content Include="viewResponse.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountMaster.Master.cs">
+      <DependentUpon>AccountMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccountMaster.Master.designer.cs">
+      <DependentUpon>AccountMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="addEvent.aspx.cs">
+      <DependentUpon>addEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addEvent.aspx.designer.cs">
+      <DependentUpon>addEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addFAQ.aspx.cs">
+      <DependentUpon>addFAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addFAQ.aspx.designer.cs">
+      <DependentUpon>addFAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addFeedbackQuestion.aspx.cs">
+      <DependentUpon>addFeedbackQuestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addFeedbackQuestion.aspx.designer.cs">
+      <DependentUpon>addFeedbackQuestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="carts.aspx.cs">
+      <DependentUpon>carts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="carts.aspx.designer.cs">
+      <DependentUpon>carts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="catalogue.aspx.cs">
+      <DependentUpon>catalogue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="catalogue.aspx.designer.cs">
+      <DependentUpon>catalogue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editProfile.aspx.cs">
+      <DependentUpon>editProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editProfile.aspx.designer.cs">
+      <DependentUpon>editProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eventActivities.aspx.cs">
+      <DependentUpon>eventActivities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eventActivities.aspx.designer.cs">
+      <DependentUpon>eventActivities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eventRegistration.aspx.cs">
+      <DependentUpon>eventRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eventRegistration.aspx.designer.cs">
+      <DependentUpon>eventRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homeWithNav.aspx.cs">
+      <DependentUpon>homeWithNav.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homeWithNav.aspx.designer.cs">
+      <DependentUpon>homeWithNav.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IdeaGathering.aspx.cs">
+      <DependentUpon>IdeaGathering.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IdeaGathering.aspx.designer.cs">
+      <DependentUpon>IdeaGathering.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manageParticipants.aspx.cs">
+      <DependentUpon>manageParticipants.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manageParticipants.aspx.designer.cs">
+      <DependentUpon>manageParticipants.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="merchandize.aspx.cs">
+      <DependentUpon>merchandize.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="merchandize.aspx.designer.cs">
+      <DependentUpon>merchandize.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="myOrder.aspx.cs">
+      <DependentUpon>myOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="myOrder.aspx.designer.cs">
+      <DependentUpon>myOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="navMenu.Master.cs">
+      <DependentUpon>navMenu.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="navMenu.Master.designer.cs">
+      <DependentUpon>navMenu.Master</DependentUpon>
+    </Compile>
+    <Compile Include="orderDetails.aspx.cs">
+      <DependentUpon>orderDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orderDetails.aspx.designer.cs">
+      <DependentUpon>orderDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="participantsInfo.aspx.cs">
+      <DependentUpon>participantsInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="participantsInfo.aspx.designer.cs">
+      <DependentUpon>participantsInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="passwordRecovery.aspx.cs">
+      <DependentUpon>passwordRecovery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="passwordRecovery.aspx.designer.cs">
+      <DependentUpon>passwordRecovery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="product.aspx.cs">
+      <DependentUpon>product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="product.aspx.designer.cs">
+      <DependentUpon>product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="serviceSupport.aspx.cs">
+      <DependentUpon>serviceSupport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="serviceSupport.aspx.designer.cs">
+      <DependentUpon>serviceSupport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signup.aspx.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signup.aspx.designer.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="summary.aspx.cs">
+      <DependentUpon>summary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="summary.aspx.designer.cs">
+      <DependentUpon>summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updateEvent.aspx.cs">
+      <DependentUpon>updateEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updateEvent.aspx.designer.cs">
+      <DependentUpon>updateEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updateMerchandize.aspx.cs">
+      <DependentUpon>updateMerchandize.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updateMerchandize.aspx.designer.cs">
+      <DependentUpon>updateMerchandize.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewResponse.aspx.cs">
+      <DependentUpon>viewResponse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewResponse.aspx.designer.cs">
+      <DependentUpon>viewResponse.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="navMenu.Master" />
+    <Content Include="filesUploaded\midAutumnFestival.pdf" />
+    <Content Include="AccountMaster.Master" />
+    <Content Include="css\style.css~RF2ca9d68.TMP" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50012</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44372/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

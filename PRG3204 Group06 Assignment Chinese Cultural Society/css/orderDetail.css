@@ -1,0 +1,100 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&family=Fredoka+One&display=swap');
+
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+/*#form1 {
+    display: flex;
+}*/
+
+.dl_product {
+    width: 800px;
+    height: auto;
+    margin: 20px 160px;
+}
+
+.detail_wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.detail_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.tb_product {
+    background: #FFFFFF;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px #686868;
+    width: 100%;
+}
+
+.td_imgProduct {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 180px;
+}
+
+.td_desc {
+    width: 45%;
+
+/*    padding: 0 20px;*/
+}
+
+.td_price {
+    width: 15%;
+    padding: 0 20px;
+}
+
+.td_qty {
+    width: 12%;
+}
+
+.summary_container {
+    background: red;
+    margin-top: 20px;
+    height: 250px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 5px #686868,
+                -2px -2px 5px #686868;
+    user-select:none;
+}
+
+.summary_container table {
+    padding: 20px;
+    width: 350px
+}
+
+.td_summary-text-left {
+    text-align: right;
+}
+
+.td_title {
+    font-weight: bold;
+}
+
+.buttons {
+    width: 350px;
+    margin: 20px 60px;
+    float: right;
+}
+
+.buttons input {
+    border: none;
+    outline: none;
+    background: #B9A5E0;
+    width: 45%;
+    padding: 5px;
+    margin: 0 2%;
+    border-radius: 25px;
+}
+
+
